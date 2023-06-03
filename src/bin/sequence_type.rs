@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn main() {
     let tup = (10, "20", 3.3);
     println!("タプル: {} {} {}", tup.0, tup.1, tup.2);
@@ -16,5 +18,15 @@ fn main() {
     println!("ベクタ2:");
     for v in &vect {
         println!("  {}", v);
+    }
+
+    let mut map = HashMap::new();
+    map.insert("x", 10);
+    map.insert("y", 20);
+    map.insert("z", 30);
+    println!("ハッシュマップ1: {} {} {}", map["x"], map["y"], map["z"]);
+    println!("ハッシュマップ2:");
+    for (k, v) in &map {
+        println!("{} {}", k, v);
     }
 }
