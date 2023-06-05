@@ -19,10 +19,10 @@ where
     T: std::fmt::Debug,
 {
     fn print(self: &Rect<T>) {
-        println!("{}x{}", self.width, self.height);
+        println!("Display: {}x{}", self.width, self.height);
     }
     fn debug(self: &Rect<T>) {
-        println!("{:#?}", self);
+        println!("Debug: {:#?}", self);
     }
 }
 

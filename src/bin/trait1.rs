@@ -11,6 +11,7 @@ impl Rect {
         self.width * self.height
     }
 }
+
 impl Printable for Rect {
     fn print(&self) {
         println!("トレイト: width:{}, height:{}", self.width, self.height);
