@@ -13,6 +13,7 @@ impl Counter {
 // Counterにforで利用できるイテレータトレイトを実装
 impl Iterator for Counter {
     type Item = u32;
+    // Option<T>:取得不可能な場合Noneを返す
     fn next(&mut self) -> Option<Self::Item> {
         self.count += 1;
         if self.count < self.max {
